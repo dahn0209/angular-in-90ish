@@ -10,3 +10,10 @@ import { Component, input } from '@angular/core';
 export class GreetingComponent {
   message = input('Hello hello!');
 }
+
+
+
+////passing the data from Parent to child////
+//input() method says that it can receive data or message from the outside. 
+///This is akin to passing props down in React
+///<p>{{ message() }}</p>

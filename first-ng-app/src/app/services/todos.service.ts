@@ -12,3 +12,5 @@ export class TodosService {
     return this.http.get<Array<Todo>>(url);
   }
 }
+///Angular Services: used to encapsulate data, making HTTP calls, or performing
+//any task that is not related directly to data rendering 
