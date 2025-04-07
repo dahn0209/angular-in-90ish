@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TodosService {
   http = inject(HttpClient);
+  ///this is getting connected with external API
+  // http =inject(httpClient) allows you to use CRUD such as POST,GET,PUT, DELETE
   getTodosFromApi() {
     const url = `https://jsonplaceholder.typicode.com/todos`;
     return this.http.get<Array<Todo>>(url);
@@ -19,3 +21,13 @@ export class TodosService {
 
 ///Services has @injectable, which means that services can be injected in other places, 
 /// while component has @Component
+
+
+//This is going to be injected in the to-do comoponent file
+
+// ## Making HTTP calls with Angular Services
+
+// - Provide HTTP module/providers in the app config using `provideHttpClient()`
+// - Inject the `HttpClient` service
+// - Use the `http` methods
+
