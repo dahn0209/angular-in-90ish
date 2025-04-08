@@ -10,6 +10,7 @@ import { FilterTodosPipe } from '../pipes/filter-todos.pipe';
   selector: 'app-todos',
   standalone: true,
   imports: [TodoItemComponent, FormsModule, FilterTodosPipe],
+  ///ngIf isn't required anymore for recent versions
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss',
 })

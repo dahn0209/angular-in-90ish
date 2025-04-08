@@ -1,9 +1,13 @@
 <h3>Todos List</h3>
 
+<!-- this was the previous version -->
+      <!-- <p *ngIf="!todoItems().length">Loading...</p> -->
+<!-- This is the current version -->
 @if (!todoItems().length) {
 <p>Loading...</p>
 }
-
+<!-- when there is nothing in todoItems(), it returns Loading... -->
+<!-- this is a structural directive -->
 <form>
   <label>Filter Todos</label>
   <input
@@ -18,3 +22,7 @@
   <app-todo-item (todoToggled)="updateTodoItem($event)" [todo]="todo" />
   }
 </ul>
+
+
+<!-- @for=====> this loops through the todoItems array -->
+<!-- track todo.id====> this is to track the id since this is unique -->

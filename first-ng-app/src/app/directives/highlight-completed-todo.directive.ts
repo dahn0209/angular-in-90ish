@@ -19,3 +19,18 @@ export class HighlightCompletedTodoDirective {
     }
   });
 }
+
+
+// ## Angular Directives
+
+// Angular Directives allow you to add additional behavior to elements in our Angular applications. <!-- .element: class="fragment"  -->
+
+// --
+
+// #### Types of Angular Directives
+
+// - Components <!-- .element: class="fragment"  -->
+// - Attribute directives <!-- .element: class="fragment"  -->
+// - Structural directives <!-- .element: class="fragment"  -->
+
+// --

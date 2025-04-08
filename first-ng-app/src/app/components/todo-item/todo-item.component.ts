@@ -12,9 +12,28 @@ import { UpperCasePipe } from '@angular/common';
 })
 export class TodoItemComponent {
   todo = input.required<Todo>();
+  ///this is display in this:///
+//   <li
+//   appHighlightCompletedTodo
+//   [isCompleted]="todo().completed"
+//   class="todos__item"
+// >
+
   todoToggled = output<Todo>();
 
+//   ///// <input
+//     id="todo-{{ todo().id }}"
+//     type="checkbox"
+//     [checked]="todo().completed"
+//     (change)="this.todoClicked()"
+//   />
+// //////
   todoClicked() {
     this.todoToggled.emit(this.todo());
   }
+
+  /// <label for="todo-{{ todo().id }}">{{ todo().title | uppercase }}</label>//
+
+
+
 }
